@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#"
+     xml:base="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Americano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Americano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Water"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_AuLait -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_AuLait">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Cappuccino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Cappuccino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Chocolate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Foam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Espresso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Espresso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Latte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Latte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Foam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Macchiato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Macchiato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Foam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Mocha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Mocha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Chocolate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#hasAdditive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#EspressoDrink"/>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Foam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Foam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Additive"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Americano"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_AuLait"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Cappuccino"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Espresso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Latte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Macchiato"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/furkan/ontologies/2020/11/espresso_drinks#Caffe_Mocha"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
